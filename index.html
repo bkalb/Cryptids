@@ -10,54 +10,119 @@
 <body>
 
 <h1>Crazy Crosby's Cryptid Crypt</h1>
+<form>
+    <fieldset>
+        <label class="creature">
+            <input type="radio" name="creature" value="minotaur">
+            <span><img src="img/minotaur.jpg" alt=""></span>
+        </label>
+        <label class="creature">
+            <input type="radio" name="creature" value="kraken">
+            <span><img src="img/kraken.jpg" alt=""></span>
+        </label>
+        <label class="creature">
+            <input type="radio" name="creature" value="centaur">
+            <span><img src="img/centaur.jpg" alt=""></span>
+        </label>
+        <label class="creature">
+            <input type="radio" name="creature" value="jackalope">
+            <span><img src="img/jackalope.jpg" alt=""></span>
+        </label>
+        <label class="creature">
+            <input type="radio" name="creature" value="dryad">
+            <span><img src="img/dryad.jpg" alt=""></span>
+        </label>
+        <label class="creature">
+            <input type="radio" name="creature" value="merman">
+            <span><img src="img/merman.jpg" alt=""></span>
+        </label>
+    </fieldset>
 
-<fieldset>
-    <label class="creature">
-        <input type="radio" name="creature" value="minotaur">
-        <span><img src="img/minotaur.jpg" alt=""></span>
-    </label>
-</fieldset>
+    <fieldset>
+        <div class="legend">About you</div>
+        <div class="field-group">
+            <div class="form-content">
+                <input type="text" name="name" placeholder="Your Name">
+            </div>
+            <div class="form-content">
+                <input type="email" name="email" placeholder="Your Email Address">
+            </div>
+            <div class="form-content">
+                <input type="tel" name="phone" placeholder="Your Phone Number">
+            </div>
+        </div>
+    </fieldset>
 
-<fieldset>
-    <legend>About you</legend>
-    <div class="form-content">
-        <input type="text" name="name">
-    </div>
-</fieldset>
+    <fieldset>
+        <div class="legend">Accessories</div>
+        <div class="form-content">
+            <label>
+                <input type="checkbox" name="nosering">
+                Nosering
+            </label>
 
-<fieldset>
-    <legend>Accessories</legend>
-    <div class="form-content">
-        <label></label>
-    </div>
-</fieldset>
+            <label>
+                <input type="checkbox" name="axe">
+                Axe
+            </label>
 
-<fieldset>
-    <legend>Currency</legend>
-    <div class="form-content">
-        <label></label>
-    </div>
-</fieldset>
+            <label>
+                <input type="checkbox" name="face-paint">
+                Face Paint
+            </label>
 
-<fieldset>
-    <legend>Payment type</legend>
-    <div class="form-content">
-        <select name="payment-type">
-        </select>
-    </div>
-</fieldset>
+            <label>
+                <input type="checkbox" name="xl-horns">
+                XL Horns
+            </label>
+        </div>
+    </fieldset>
 
-<fieldset>
-    <legend>Custom spell</legend>
-    <div class="form-content">
-    </div>
-</fieldset>
+    <fieldset>
+        <div class="legend">Currency</div>
+        <div class="form-content">
+            <label>
+                <input type="radio" name="usd">
+                $ USD
+            </label>
 
-<fieldset>
-    <div class="form-content">
-        <button>Buy one</button>
-    </div>
-</fieldset>
+            <label>
+                <input type="radio" name="gbp">
+                &pound; <abbr>GBP</abbr>
+            </label>
+
+            <label>
+                <input type="radio" name="euro">
+                &euro; EURO
+            </label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <div class="legend">Payment type</div>
+        <div class="form-content">
+            <select name="payment-type">
+                <option value="amex">Amex</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="discover">Discover</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <div class="legend">Custom spell</div>
+        <div class="form-content">
+            <textarea placeholder="E.G. by the power of Grayskull..."></textarea>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <div class="form-content">
+            <button>Buy one</button>
+        </div>
+    </fieldset>
+</form>
 
 </body>
 </html>

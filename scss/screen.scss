@@ -7,6 +7,29 @@ html {
 
 body {
     font-family: 'IM Fell DW Pica SC', serif;
+    text-transform: uppercase;
+    // padding: 10px;
+    width: 1170px;
+}
+
+h1 {
+    background: #2a3e8e;
+    height: 50px;
+    text-align: center;
+    vertical-align: center;
+    font-size: 18px;
+    color: white;
+    padding-top: 18px;
+    letter-spacing: 5px;
+}
+
+form {
+    font-family: 'IM Fell DW Pica SC', serif;
+    margin: 0 10px;
+}
+
+fieldset {
+    margin-bottom: 10px;
 }
 
 /* CREATURES */
@@ -20,16 +43,21 @@ body {
     img {
         border-radius: 50%;
         display: block;
+        margin: 30px 40px 40px;
     }
 
     &:hover {
         opacity: 1;
     }
 
+    input[type="radio"] {
+        display: none;
+    }
+
     // This selector needs to be more specific. Right now it
     // shows a checkmark on every cryptid. It should only show
     // a checkmark for the cryptid that's chosen.
-    span:after {
+    input:checked ~ span:after {
         content:"✓";
         color: white;
         font-size: 100px;
@@ -38,3 +66,78 @@ body {
         left: 50%;
     }
 }
+
+.legend {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+}
+
+.form-content {
+    display: inline-block;
+    margin-bottom: 8px;
+
+    input[type=radio], input[type=checkbox] {
+        margin-right: 8px;
+    }
+
+    label {
+        padding-right: 8px;
+    }
+}
+
+.field-group {
+    display: inline-block;
+    .form-content {
+        display: block;
+    }
+}
+
+input[type=text], input[type=email], input[type=tel], textarea {
+    width: 845px;
+    border: 1px dashed #b3b3b3;
+    padding: 12px;
+    border-radius: 5px;
+    &:focus {
+        border: 1px solid black;
+    }
+}
+
+input[type=text] {
+}
+
+textarea {
+    height: 80px;
+}
+
+::-webkit-input-placeholder {
+    font-family: 'IM Fell DW Pica SC', serif;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    font-family: 'IM Fell DW Pica SC', serif;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+select {
+    font-family: 'IM Fell DW Pica SC', serif;
+    font-size: 16px;
+}
+
+button {
+    margin-left: 304px;
+    height: 35px;
+    width: 90px;
+    border-radius: 5px;
+    background: #428bca;
+    color: white;
+    border: 1px solid gray;
+    font: inherit;
+    text-transform: inherit;
+}
+
+
+
